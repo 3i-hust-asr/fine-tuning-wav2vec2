@@ -53,7 +53,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     df = pd.read_csv(args.data_csv, encoding='utf-8')
     vocab_dict = create_tokenizer(df)
-    vocab_dict["|"] = vocab_dict[" "]
+    vocab_dict["|"] = len(vocab_dict)
     vocab_dict["[UNK]"] = len(vocab_dict)
     vocab_dict["[PAD]"] = len(vocab_dict)
     with open(args.path_json_output, 'w') as vocab_file:

@@ -136,7 +136,7 @@ if __name__ == "__main__":
 
     parser.add_argument('--model_pretrain',
                         type=str,
-                        default="facebook/wav2vec2-large-960h",
+                        default="facebook/wav2vec2-large-xlsr-53",
                         required=False,
                         help="str - name model pretrain")
 

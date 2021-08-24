@@ -1,7 +1,7 @@
 
 1. create tokenizer:
     
-    `python3 core/create_tokenzer.py --data_csv data/train.csv --path_json_output vocab.json`
+    `python3 core/create_tokenizer.py --data_csv data/train.csv --path_json_output vocab.json`
 
 2. train model:
 
